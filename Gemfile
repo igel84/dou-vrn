@@ -1,5 +1,4 @@
-source 'https://rubygems.org'
-
+source 'http://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'magic_encoding'
 
@@ -43,4 +42,3 @@ gem 'jquery-rails'
 gem 'unicorn'
 
 gem 'capistrano'
-gem 'thin'
