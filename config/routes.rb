@@ -1,6 +1,11 @@
 InitialRelease::Application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  devise_for :users
   
-  root :to => "homes#index"
+  mount Ckeditor::Engine => '/ckeditor'
+  root :to => 'articles#show'
+  resources :articles
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
