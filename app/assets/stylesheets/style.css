@@ -93,7 +93,7 @@ h2.pagetitle {
 #sidebar h2 {
 	font-family: 'Trebuchet ms', Verdana, Sans-Serif;
 	font-size: 1.2em;
-	color:#433f27;
+	color:#433f27;	
 	}
 
 h3 {
@@ -275,6 +275,7 @@ float:left;
 	padding: 0px 2px 0 0;
 	line-height: 100%;
 	float: left;
+	margin-left: 20px;
 }
 .post .date span {
 	height: 16px;
@@ -287,7 +288,7 @@ float:left;
 .post .title {
 	float: left;
 	margin-left: 10px;
-	width: 470px;
+	width: 450px;
 }
 .postdata {
 	font-size: 90%;
@@ -482,13 +483,13 @@ html>body .entry li {
 	list-style-type: none;
 	list-style-image: none;
     padding: 10px 0px 0px 0px;
-    margin: 0px 0px 0px 20px;
+    margin: 0px 0px 10px 20px;
 	}
 #sidebar ul li ul{
-margin: 0px 0px 0px 10px;
+margin: 10px 0px 0px 10px;
 }
 #sidebar ul p, #sidebar ul select {
-	margin: 5px 0 8px;
+	margin: 5px 8px 5px;
 	}
 
 #sidebar ul ul ul, #sidebar ul ol {
@@ -689,10 +690,15 @@ a img {
 	margin-top: 10px;
 	margin-bottom: 30px;
 	}
-/* End Various Tags & Classes*/
 
+h3.navigate {
+	margin: 15px 10px; 
+	}
 
+.galery_list {
+	margin: 10px 0 0 30px;
+	}
 
-/* "Daisy, Daisy, give me your answer do. I'm half crazy all for the love of you.
-	It won't be a stylish marriage, I can't afford a carriage.
-	But you'll look sweet upon the seat of a bicycle built for two." */
+.galery_list img {
+	margin: 10px 10px 10px 0;
+}

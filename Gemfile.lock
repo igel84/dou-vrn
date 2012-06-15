@@ -82,6 +82,9 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fancybox-rails (0.1.4)
+      railties (>= 3.1.0)
+    friendly_id (4.0.7)
     fssm (0.2.9)
     gherkin (2.11.0)
       json (>= 1.4.6)
@@ -140,7 +143,6 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (>= 0.0.2)
       mime-types
-    permalink (1.2.1)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -253,6 +255,8 @@ DEPENDENCIES
   cucumber
   devise
   execjs
+  fancybox-rails
+  friendly_id
   gritter_notices
   haml-rails
   jquery-rails
@@ -260,7 +264,6 @@ DEPENDENCIES
   letter_opener
   magic_encoding
   paperclip
-  permalink
   rails (= 3.2.3)
   rails-erd
   rails_admin

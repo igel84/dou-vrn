@@ -4,8 +4,10 @@ InitialRelease::Application.routes.draw do
   devise_for :users
   
   mount Ckeditor::Engine => '/ckeditor'
-  root :to => 'articles#show'
-  resources :articles
+  
+  root :to => 'Articles#index'
+
+  resources :articles, :galeries
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

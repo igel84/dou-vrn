@@ -8,4 +8,7 @@ class Galery < ActiveRecord::Base
 
   belongs_to :photo
 
+  extend FriendlyId
+  friendly_id :name, use: [:slugged, :history]
+
 end

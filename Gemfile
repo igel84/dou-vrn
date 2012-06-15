@@ -8,7 +8,8 @@ gem 'haml-rails'
 gem 'paperclip'
 gem 'ckeditor', "3.7.0.rc3"
 gem 'gritter_notices'
-gem 'permalink'
+#gem 'permalink'
+gem 'friendly_id'
 gem 'awesome_nested_set'
 gem 'russian'
 gem 'json'
@@ -38,6 +39,7 @@ group :test do
 end
 
 gem 'jquery-rails'
+gem 'fancybox-rails'
 
 gem 'unicorn'
 
