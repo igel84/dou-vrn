@@ -248,14 +248,13 @@ ru:
       long: ! '%d %B %Y, %H:%M'
       short: ! '%d %b, %H:%M'
       for_news: ! "%m-%d-%Y"
+      short_date: ! "%m-%d-%Y"
     pm: вечера
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
   activemodel:
     errors:
       <<: *errors
   activerecord:
-    errors:
-      <<: *errors
     models:
       article:
         one: 'статья'
@@ -267,33 +266,51 @@ ru:
         few: 'новости'
         many: 'новости'
         other: 'новости'
-      partner:
-        one: 'партнер'
-        few: 'партнеры'
-        many: 'партнеры'
-        other: 'партнеры'
-      portfolio:
-        one: 'портфолио'
-        few: 'портфолио'
-        many: 'портфолио'
-        other: 'портфолио'
-      portfolio_item:
-        one: 'элемент портфолио'
-        few: 'элементы портфолио'
-        many: 'элементы портфолио'
-        other: 'элементы портфолио'
-      review:
-        one: 'отзыв'
-        few: 'отзывы'
-        many: 'отзывы'
-        other: 'отзывы'
-      special_offer:
-        one: 'специальное предложение'
-        few: 'специальные предложения'
-        many: 'специальные предложения'
-        other: 'специальные предложения'
+      galery:
+        one: 'галерея'
+        few: 'галереи'
+        many: 'галереи'
+        other: 'галереи'
+      photo:
+        one: 'фото'
+        few: 'фото'
+        many: 'фото'
+        other: 'фото'
       user:
         one: 'пользователь'
         few: 'пользователи'
         many: 'пользователи'
         other: 'пользователи'
+    attributes:
+      article:
+        id: '№'
+        title: 'заголовок'
+        parent: 'родитель'
+        body: 'содержание'
+      galery:
+        id: '№'
+        name: 'название'
+        photos: 'фотографии'
+      photo:
+        id: '№'
+        photo_image: 'изображение'
+        name: 'название'
+        galeries: 'галереи'
+      user:
+        id: '№'
+        email: 'e-mail'
+        password: 'пароль'
+        sign_in_count: 'кол-во авторизаций'
+        last_sign_in_at: 'время крайней авторизации'
+        last_sign_in_ip: 'ip крайней автоизации'
+        galeries: 'галереи'
+        roles: 'роли'
+      news:
+        id: '№'
+        date: 'дата'
+        title: 'заголовок'
+        image: 'изображение'
+        preview: 'кратко'
+        body: 'текст'
+    errors:
+      <<: *errors

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120615093652) do
+ActiveRecord::Schema.define(:version => 10) do
 
   create_table "articles", :force => true do |t|
     t.string   "title"
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(:version => 20120615093652) do
     t.integer  "parent_id"
     t.integer  "lft"
     t.integer  "rgt"
+    t.integer  "depth"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.integer  "depth"
   end
 
   create_table "ckeditor_assets", :force => true do |t|
@@ -39,6 +39,19 @@ ActiveRecord::Schema.define(:version => 20120615093652) do
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], :name => "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_ckeditor_assetable_type"
 
+  create_table "galeries", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "galery_photos", :force => true do |t|
+    t.integer  "galery_id"
+    t.integer  "photo_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "gritter_notices", :force => true do |t|
     t.integer  "owner_id",     :null => false
     t.string   "owner_type",   :null => false
@@ -50,6 +63,17 @@ ActiveRecord::Schema.define(:version => 20120615093652) do
   end
 
   add_index "gritter_notices", ["owner_id", "delivered_at"], :name => "index_gritter_notices_on_owner_id_and_delivered_at"
+
+  create_table "photos", :force => true do |t|
+    t.string   "name"
+    t.text     "info"
+    t.string   "photo_image_file_name"
+    t.string   "photo_image_content_type"
+    t.integer  "photo_image_file_size"
+    t.datetime "photo_image_updated_at"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
 
   create_table "rails_admin_histories", :force => true do |t|
     t.text     "message"

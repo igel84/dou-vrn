@@ -42,3 +42,4 @@ gem 'jquery-rails'
 gem 'unicorn'
 
 gem 'capistrano'
+gem 'thin'
