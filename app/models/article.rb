@@ -1,6 +1,6 @@
 #encoding: utf-8
 class Article < ActiveRecord::Base
-  attr_accessible :title, :body
+  #attr_accessible :title, :body
 
   before_save :set_permalink
   validates :title, :presence => :true

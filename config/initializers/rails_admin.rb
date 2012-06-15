@@ -5,7 +5,7 @@ RailsAdmin.config do |config|
   #config.audit_with :history, User
   config.main_app_name = ['a1', 'Admin']
   config.default_items_per_page = 50
-  config.excluded_models = [Ckeditor::Asset, Ckeditor::AttachmentFile, Ckeditor::Picture, GritterNotice]
+  config.excluded_models = [Ckeditor::Asset, Ckeditor::AttachmentFile, Ckeditor::Picture, GritterNotice, User]
   config.label_methods << [:name, :title]
   config.model Article do
     # Found associations:
