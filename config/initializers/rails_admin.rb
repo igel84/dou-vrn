@@ -9,24 +9,24 @@ RailsAdmin.config do |config|
   config.label_methods << [:name, :title]
   config.model Article do
     # Found associations:
-      #configure :parent, :belongs_to_association 
+      configure :parent, :belongs_to_association 
       #configure :special_offers, :has_many_association 
-      #configure :children, :has_many_association   #   # Found columns:
+      configure :children, :has_many_association   #   # Found columns:
       
-      #configure :id, :integer 
+      configure :id, :integer 
       
       configure :title, :string 
       configure :body, :text 
       
       #configure :created_at, :datetime 
       #configure :updated_at, :datetime 
-      #configure :permalink, :string 
+      configure :permalink, :string 
       
-      #configure :parent_id, :integer         # Hidden 
+      configure :parent_id, :integer         # Hidden 
       
-      #configure :lft, :integer 
-      #configure :rgt, :integer 
-      
+      configure :lft, :integer 
+      configure :rgt, :integer 
+      configure :depth, :integer   #   # Sections:
       #configure :special_offer, :boolean 
       #configure :meta_title, :string 
       #configure :help_info, :boolean   #   # Sections:
@@ -34,18 +34,18 @@ RailsAdmin.config do |config|
     export do; end
     show do; end
     edit do
+      field :parent
       #field :parent_id, :integer do
       #  visible false
       #end
       #field :parent, :belongs_to_association
+
       field :title, :string 
       field :body, :text do
         ckeditor do 
           true
         end
       end
-      #field :special_offers, :has_many_association
-      #field :children, :has_many_association
     end
     create do; end
     update do; end
