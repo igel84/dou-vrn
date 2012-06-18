@@ -5,7 +5,7 @@ gem 'magic_encoding'
 gem 'sqlite3'
 #gem 'mysql2'
 gem 'haml-rails'
-gem 'paperclip'
+gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'ckeditor', "3.7.0.rc3"
 gem 'gritter_notices'
 #gem 'permalink'

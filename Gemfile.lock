@@ -4,6 +4,17 @@ GIT
   specs:
     yaml_db (0.2.2)
 
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: ccfcc22fa756c4abf2ae7ccb19c28e8976223bfb
+  specs:
+    paperclip (3.1.0)
+      activemodel (>= 3.0.0)
+      activerecord (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (>= 0.0.2)
+      mime-types
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -137,12 +148,6 @@ GEM
     net-ssh-gateway (1.1.0)
       net-ssh (>= 1.99.1)
     orm_adapter (0.0.7)
-    paperclip (3.0.4)
-      activemodel (>= 3.0.0)
-      activerecord (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (>= 0.0.2)
-      mime-types
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.2)
@@ -263,7 +268,7 @@ DEPENDENCIES
   json
   letter_opener
   magic_encoding
-  paperclip
+  paperclip!
   rails (= 3.2.3)
   rails-erd
   rails_admin

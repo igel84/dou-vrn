@@ -9,8 +9,8 @@ class Photo < ActiveRecord::Base
   has_many :galery_photos
   has_many :galeries, :through => :galery_photos
 
-  image_url = "/system/:attachment/:id/:style/:basename.:extension"
-  image_path = ":rails_root/public/system/:attachment/:id/:style/:basename.:extension"
+  image_url = "/system/photo_images/:id/:style/:basename.:extension"
+  image_path = ":rails_root/public/system/photo_images/:id/:style/:basename.:extension"
 
   has_attached_file :photo_image, :processors => [:watermark], :styles => { :medium => { :geometry => "640x480>", :watermark_path => "#{Rails.root}/public/images/watermark.png"} , :thumb => "150x120#" }, url: image_url, path: image_path
 
