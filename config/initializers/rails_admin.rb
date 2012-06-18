@@ -6,7 +6,7 @@ RailsAdmin.config do |config|
   config.main_app_name = ['a1', 'Admin']
   config.default_items_per_page = 50
   config.excluded_models = [Ckeditor::Asset, Ckeditor::AttachmentFile, Ckeditor::Picture, GritterNotice, User, GaleryPhoto]
-  config.label_methods << [:name, :title]
+  #config.label_methods << [:name]
   config.model Article do
     # Found associations:
       configure :parent, :belongs_to_association 
@@ -91,11 +91,6 @@ RailsAdmin.config do |config|
       field :name
       field :photo_image
       field :galeries
-      field :info, :text do
-        ckeditor do 
-          true
-        end
-      end
     end
     create do; end
     update do; end

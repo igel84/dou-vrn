@@ -261,7 +261,7 @@ DEPENDENCIES
   devise
   execjs
   fancybox-rails
-  friendly_id
+  friendly_id (~> 4.0.1)
   gritter_notices
   haml-rails
   jquery-rails

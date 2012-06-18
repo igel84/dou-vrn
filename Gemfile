@@ -9,7 +9,7 @@ gem 'paperclip', :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'ckeditor', "3.7.0.rc3"
 gem 'gritter_notices'
 #gem 'permalink'
-gem 'friendly_id'
+gem 'friendly_id', "~> 4.0.1"
 gem 'awesome_nested_set'
 gem 'russian'
 gem 'json'
