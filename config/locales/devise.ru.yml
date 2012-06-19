@@ -1,4 +1,11 @@
 ru: 
+  activerecord:
+    attributes:
+        user:
+            email: "email "
+            password: "пароль"
+            password_confirmation: "повтор пароля"
+            remember_me: "запомнить"
   devise: 
     confirmations: 
       confirmed: "Ваш аккаунт подтверждён. Добро пожаловать."
