@@ -72,8 +72,12 @@ h1, h2, h3 {
 	}
 
 h1 {
-	font-size: 3em;
+	font-size: 22px;
 	text-align: center;
+	padding: 15px 0px 0px 0px;
+	line-height: 60px;
+	text-align:center;
+	margin: 0;
 	}
 
 #headerimg .description {
@@ -102,10 +106,10 @@ h3 {
 
 h1, h1 a, h1 a:visited, #headerimg .description {
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #fff;
 	}
 h1 a:hover{
-	color:#999;
+	color:#ddd;
 }
 
 h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited {
@@ -364,12 +368,6 @@ float:left;
 
 
 /*	Begin Headers */
-h1 {
-	padding: 70px 0px 0px 0px;
-	text-align:center;
-	margin: 0;
-	}
-
 h2 {
 	margin: 0px 0 0;
 	border-bottom: dotted 1px #CCCCCC;

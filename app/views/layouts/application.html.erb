@@ -14,7 +14,12 @@
 
 <div id="header">
 	<div id="headerimg">
-		<h1><a href="http://xtemplate.ru/prosmotr/">&laquo;Центр развития ребенка&raquo;<br/>Детский сад № 183</a></h1>
+		<h1>
+			<%= link_to root_path do %>
+				<font style='font-size:13px'>МУНИЦИПАЛЬНОЕ БЮДЖЕТНОЕ ДОШКОЛЬНОЕ ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ</font>
+				&laquo;Центр развития ребёнка - детский сад № 183&raquo;
+			<% end %>
+		</h1>
 		<div class="description"></div>
 	</div>
 </div>
